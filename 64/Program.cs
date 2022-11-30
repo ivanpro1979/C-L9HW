@@ -12,9 +12,9 @@ if (n < 1)
 
 PrintNumbers(n, 1);
 
-void PrintNumbers(int n, int end)
+void PrintNumbers(int start, int end)
 {
-    Console.Write($"{n} ");
-    if (n == 1) return;
-    PrintNumbers(n - 1, end);
+    Console.Write($"{start} ");
+    if (start == end) return;
+    PrintNumbers(start - 1, end);
 }
