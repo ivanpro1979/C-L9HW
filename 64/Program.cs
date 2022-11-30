@@ -4,6 +4,11 @@
 Console.Clear();
 Console.Write("Введите N: ");
 int n = int.Parse(Console.ReadLine());
+if (n < 1)
+{
+    Console.Write("Вы ввели не натуральное число!");
+    return;
+}
 
 PrintNumbers(n, 1);
 
